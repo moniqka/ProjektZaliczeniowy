@@ -1,0 +1,62 @@
+{
+    "extends": ["react-app","react-app/jest","plugin:import/recommended","prettier"],
+    "parser": "@babel/eslint-parser",
+    "env": {
+      "jest": true
+    },
+    "parserOptions": {
+      "requireConfigFile": false
+    },
+    "globals": {
+      "document": true,
+      "window":true,
+      "fetch":true,
+      "navigator":true,
+      "Blob":true,
+      "screen":true
+    },
+    "rules": {
+      "camelcase":0,
+      "no-unused-vars":1,
+      "no-plusplus": 0,
+      "import/extensions":1,
+      "import/order":1,
+      "import/prefer-default-export": 0,
+      "no-empty-pattern":1,
+      "import/no-extraneous-dependencies": 0,
+      "no-loop-func":0,
+      "import/no-unresolved": 0,
+      "guard-for-in":0,
+      "arrow-body-style":1,
+      "no-console":0,
+      "no-param-reassign": 0,
+      "array-callback-return":0,
+      "no-undef":1,
+      "no-restricted-syntax":1,
+      "no-underscore-dangle":0,
+      "react/jsx-curly-brace-presence":1,
+      "no-unused-expressions":0,
+      "react/react-in-jsx-scope":0,
+      "react/jsx-no-duplicate-props":0,
+      "react/jsx-props-no-spreading":0,
+      "import/no-anonymous-default-export":0,
+      "react/jsx-no-undef":1,
+      "react/forbid-prop-types":0,
+      "react/prop-types":1,
+      "react/jsx-filename-extension": [
+        1,
+        {
+          "extensions": [".js"]
+        }
+      ]
+    },
+    "settings": {
+      "import/resolver": {
+        "node": {
+          "paths": ["./src"],
+          "extensions": [".js", ".jsx", ".ts", ".tsx"]
+        }
+      }
+    }
+  }
+  
